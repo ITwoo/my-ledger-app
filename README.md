@@ -45,7 +45,7 @@ npm install
 npm run start:dev
 ```
 
-서버는 `http://localhost:3000`에서 실행됩니다.
+서버는 `http://localhost:3001`에서 실행됩니다.
 
 ### Frontend 실행
 
@@ -55,7 +55,7 @@ npm install
 npm run dev
 ```
 
-애플리케이션은 `http://localhost:3001`에서 실행됩니다.
+애플리케이션은 `http://localhost:3000`에서 실행됩니다.
 
 ## 📱 주요 기능
 
