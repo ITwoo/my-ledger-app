@@ -70,12 +70,23 @@ npm run dev
 
 ### Backend API 엔드포인트
 
-- `POST /ai/analyze` — AI 분석 요청
-- `GET /transactions` — 거래 목록 조회
-- `POST /transactions` — 거래 생성
-- `GET /transactions/:id` — 거래 상세 조회
-- `PATCH /transactions/:id` — 거래 수정
-- `DELETE /transactions/:id` — 거래 삭제
+| 메서드 | 엔드포인트 | 설명 |
+|--------|------------|------|
+| `POST` | `/transactions` | 거래 생성 |
+| `GET` | `/transactions` | 거래 목록 조회 (year, month, day, category, type 쿼리 파라미터) |
+| `GET` | `/transactions/statistics` | 통계 조회 (year, month 쿼리 파라미터) |
+| `GET` | `/transactions/:id` | 거래 상세 조회 |
+| `PUT` | `/transactions/:id` | 거래 수정 |
+| `DELETE` | `/transactions/:id` | 거래 삭제 |
+
+### AI API 엔드포인트
+
+| 메서드 | 엔드포인트 | 설명 |
+|--------|------------|------|
+| `POST` | `/ai/parse` | 텍스트를 거래로 파싱 |
+| `POST` | `/ai/parse-and-save` | 파싱 후 바로 저장 |
+| `GET` | `/ai/analyze?year=&month=` | 지출 분석 (AI) |
+| `GET` | `/ai/report?year=&month=` | 리포트 생성 (AI) |
 
 ### Frontend 페이지
 
